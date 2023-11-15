@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="клон сайту Укрпошти" />
+    <meta property="og:title" content="Проект: сайт Укрпошти" />
+    <meta
+      property="og:description"
+      content="Проект, виконав Віктор Зварич під час навчання в Okten school у листопаді 2023 року"
+    />
+
+    <!-- Title -->
+    <title>Проект: сайт Укрпошти</title>
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header--top">
+        <a href="/">
+          <img src="./assets/icons/logo.svg" alt="site logo" class="logo" />
+        </a>
+      </div>
+
+      <div class="header--bottom">
+        <nav class="nav-desktop">
+          <ul class="main-menu">
+            <li>
+              <a href="#" class="main-menu--link">Трекінг</a>
+            </li>
+            <li>
+              <a href="#" class="main-menu--link">Послуги</a>
+            </li>
+            <li>
+              <a href="#" class="main-menu--link">Тарифи</a>
+            </li>
+            <li>
+              <a href="#" class="main-menu--link">Відділення</a>
+            </li>
+            <li>
+              <a href="#" class="main-menu--link">Філателія</a>
+            </li>
+            <li>
+              <a href="#" class="main-menu--link">Кар’єра</a>
+            </li>
+            <li>
+              <a href="#" class="main-menu--link">Бізнесу</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="header--nav-mobile">
+          <input
+            aria-hidden="true"
+            type="checkbox"
+            id="nav-mobile"
+            class="nav-mobile--input"
+          />
+
+          <label class="nav-mobile--label" for="nav-mobile">
+            <p class="burger-icon">
+              <span class="burger-icon--top"></span>
+              <span class="burger-icon--bottom"></span>
+            </p>
+          </label>
+
+          <ul class="nav-mobile">
+            <li class="nav-mobile--common">
+              <input
+                aria-hidden="true"
+                type="checkbox"
+                id="nav-mobile--common"
+                class="nav-mobile--common-input"
+              />
+
+              <label class="nav-mobile--common-label" for="nav-mobile--common">
+                <span class="nav-mobile--arrow">&#8250;</span>
+                <h5>Загальна інформація</h5>
+              </label>
+
+              <ul>
+                <li class="nav-mobile-item">
+                  <a href="#">Про Укрпошту</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Наглядова рада</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Керівництво</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Дирекції</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Публічна інформація</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Продаж і оренда нерухомості</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Протидія корупції</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Політика безпеки дорожнього руху</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Конфіденційність</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Для представників ЗМІ</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Новини</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Акції</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Контакт-центр</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-mobile--post-services">
+              <input
+                aria-hidden="true"
+                type="checkbox"
+                id="nav-mobile--post-services"
+                class="nav-mobile--post-services-input"
+              />
+
+              <label
+                class="nav-mobile--post-services-label"
+                for="nav-mobile--post-services"
+              >
+                <span class="nav-mobile--arrow">&#8250;</span>
+                <h5>Поштові послуги</h5>
+              </label>
+
+              <ul>
+                <li class="nav-mobile-item">
+                  <a href="#">Укрпошта Експрес</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Укрпошта Стандарт</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Укрпошта Документи</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Доставка по світу</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Доставка в Україну</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Великогабаритні або великовагові відправлення</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Кур’єрська доставка</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Розрахунок вартості</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-mobile--financial-services">
+              <input
+                aria-hidden="true"
+                type="checkbox"
+                id="nav-mobile--financial-services"
+                class="nav-mobile--financial-services-input"
+              />
+
+              <label
+                class="nav-mobile--financial-services-label"
+                for="nav-mobile--financial-services"
+              >
+                <span class="nav-mobile--arrow">&#8250;</span>
+                <h5>Фінансові послуги</h5>
+              </label>
+
+              <ul>
+                <li class="nav-mobile-item">
+                  <a href="#">Переказ «З картки додому»</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Переказ «З картки до відділення»</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Переказ «З картки на картку»</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Міжнародні поштові перекази</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Внутрішні поштові перекази</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Платежі</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Страхові послуги</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Валютно-обмінні операції</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-mobile--other">
+              <input
+                aria-hidden="true"
+                type="checkbox"
+                id="nav-mobile--other"
+                class="nav-mobile--other-input"
+              />
+
+              <label class="nav-mobile--other-label" for="nav-mobile--other">
+                <span class="nav-mobile--arrow">&#8250;</span>
+                <h5>Інше</h5>
+              </label>
+
+              <ul>
+                <li class="nav-mobile-item">
+                  <a href="#">Онлайн-сервіси</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Онлайн-передплата</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Поштовий маркет</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Продукти «Власної марки»</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Періодичні видання</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Для видавців</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Посткросинг</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Секограма</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Знайти індекс</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Знайти адресу</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Знайти відділення</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">Довідка</a>
+                </li>
+                <li class="nav-mobile-item">
+                  <a href="#">API від Укрпошти</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- Main page title -->
+      <h1 aria-hidden="true" class="main-page--title">
+        Укрпошта. Головна сторінка
+      </h1>
+
+      <!-- Hero banner PLUS Tracking -->
+      <!-- Hero banner -->
+      <section class="hero-banner">
+        <a href="#">
+          <h3 class="hero-banner--title">Оформлюйте передплату!</h3>
+
+          <p class="hero-banner--text">Досхочу вибирайте й призи вигравайте</p>
+        </a>
+      </section>
+
+      <!-- Services -->
+      <section class="services">
+        <!-- Services | Tracking  -->
+        <div class="tracking">
+          <form class="tracking--form" action="#" method="get">
+            <label for="tracking-number">
+              <input
+                class="tracking-number--input"
+                type="text"
+                name="tracking-number"
+                id="tracking-number"
+                placeholder="Введіть номер відправлення"
+                minlength="10"
+                maxlength="17"
+                required
+              />
+            </label>
+
+            <button class="tracking-number--button" type="submit">
+              <span class="tracking-number--button-text">Відстежити</span>
+
+              <span class="tracking-number--button-icon">🔍</span>
+            </button>
+          </form>
+
+          <ul class="tracking--links">
+            <li>
+              <a href="#" class="calculate">
+                <img src="./assets/icons/calculate.svg" alt="calculate icon" />
+                <span>Розрахувати</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="form-parcel">
+                <img src="../assets/icons/parcel.svg" alt="form parcel icon" />
+                <span>Оформити</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="find-index">
+                <img src="../assets/icons/index.svg" alt="find index icon" />
+                <span>Знайти індекс</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="book">
+                <img src="../assets/icons/book.svg" alt="book icon" />
+                <span>Передплатити</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="services--banner">
+          <h2 class="section-title">Поштові послуги</h2>
+          <p>
+            Замовляйте доставку у найвіддаленіші куточки України, відправляйте й
+            отримуйте посилки з усього світу і навпаки. Виберіть доставку, яка
+            найкраще підійде вам за термінами пересилання і вартістю.
+          </p>
+        </div>
+
+        <ul class="services--list">
+          <li class="services--list-item">
+            <a href="#">
+              <h4 class="subsection-title">Доставка по Україні</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+
+          <li class="services--list-item">
+            <a href="#">
+              <h4 class="subsection-title">Доставка документів</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+
+          <li class="services--list-item">
+            <a href="#">
+              <h4 class="subsection-title">Доставка з інтернет-магазинів</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+
+          <li class="services--list-item">
+            <a href="#">
+              <h4 class="subsection-title">Доставка ліків</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+
+          <li class="services--list-item">
+            <a href="#">
+              <h4 class="subsection-title">Доставка по світу</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+
+          <li class="services--list-item">
+            <a href="#">
+              <h4 class="subsection-title">Доставка в Україну</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Export -->
+      <section class="export">
+        <div class="export--banner">
+          <h2 class="section-title">
+            Започаткуйте успішний міжнародний бізнес!
+          </h2>
+          <p>
+            Продавайте товари за кордон через інтернет — нам довіряють 25 тисяч
+            підприємців
+          </p>
+          <a href="#" class="export--banner-button">Перейти</a>
+        </div>
+      </section>
+
+      <!-- Finances -->
+      <section class="finances">
+        <article class="finances--news">
+          <a href="#">
+            <h4 class="subsection-title">
+              Укрпошта надала благодійної та гуманітарної допомоги на понад 150
+              мільйонів гривень
+            </h4>
+            <p>
+              У 2022 році, коли росія вдалася до повномасштабного вторгнення на
+              територію нашої держави, Укрпошта, окрім основних…
+            </p>
+            <h6>Докладніше &#8250;</h6>
+          </a>
+        </article>
+
+        <h2 class="section-title">Фінансові послуги</h2>
+
+        <ul class="finances--list">
+          <li class="finances--list-item">
+            <a href="#">
+              <h4 class="finances-title">Грошові перекази</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+
+          <li class="finances--list-item">
+            <a href="#">
+              <h4 class="finances-title">Міжнародні перекази</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+
+          <li class="finances--list-item">
+            <a href="#">
+              <h4 class="finances-title">Страхування</h4>
+              <h6>Докладніше &#8250;</h6>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Index -->
+      <section class="index">
+        <h2 class="section-title">Знайти індекс</h2>
+
+        <p class="index--text">
+          Поштовий індекс — це код із 5 цифр, який допомагає пришвидшити
+          сортування та доставку відправлень. Поштовий індекс мають всі
+          відділення Укрпошти та всі населені пункти України.
+        </p>
+
+        <form class="index--search" action="#" method="get">
+          <label class="index--search-input" for="index--search-input">
+            <input
+              type="text"
+              name="index--search-input"
+              id="index--search-input"
+              placeholder="Введіть назву населеного пункту"
+              minlength="5"
+              maxlength="17"
+              required
+            />
+          </label>
+
+          <button class="index--search-button" type="submit">
+            <span>Знайти</span>
+          </button>
+        </form>
+      </section>
+
+      <!-- News PLUS Business" -->
+      <div class="news-plus-business">
+        <!-- News -->
+        <section class="news">
+          <h2 class="section-title">Новини</h2>
+
+          <ul class="news--list">
+            <li class="news--list-item">
+              <a href="#">
+                <div class="news--list-item-top">
+                  <img src="./assets/icons/icon-frame.png" alt="news icon" />
+
+                  <div>
+                    <p class="news--list-item-date">06.11.2023</p>
+
+                    <h5 class="news--list-item-title">
+                      Відновлення історичної назви міста Звягель
+                    </h5>
+                  </div>
+                </div>
+
+                <p class="news--list-item-bottom">
+                  09 листопада п.р. відбудеться погашення
+                </p>
+              </a>
+            </li>
+
+            <li class="news--list-item">
+              <a href="#">
+                <div class="news--list-item-top">
+                  <img src="./assets/icons/icon-pin.png" alt="news icon" />
+
+                  <div>
+                    <p class="news--list-item-date">03.11.2023</p>
+
+                    <h5 class="news--list-item-title">
+                      У селі Архангельське на Херсонщині відкрили стаціонарне
+                      відділення Укрпошти
+                    </h5>
+                  </div>
+                </div>
+
+                <p class="news--list-item-bottom">
+                  Днями відновило свою роботу стаціонарне автоматизоване
+                  відділення Укрпошти в селищі Архангельське (74022)…
+                </p>
+              </a>
+            </li>
+
+            <li class="news--list-item">
+              <a href="#">
+                <div class="news--list-item-top">
+                  <img src="./assets/icons/icon-pin.png" alt="news icon" />
+
+                  <div>
+                    <p class="news--list-item-date">03.11.2023</p>
+
+                    <h5 class="news--list-item-title">
+                      Укрпошта в Японії: українські марки на філателістичній
+                      виставці JAPEX2023
+                    </h5>
+                  </div>
+                </div>
+
+                <p class="news--list-item-bottom">
+                  Сьогодні відбулося урочисте відкриття Всеяпонської
+                  філателістичної виставки JAPEX2023 під загальною назвою…
+                </p>
+              </a>
+            </li>
+
+            <li class="news--list-item">
+              <a href="#">
+                <div class="news--list-item-top">
+                  <img src="./assets/icons/icon-pin.png" alt="news icon" />
+
+                  <div>
+                    <p class="news--list-item-date">06.11.2023</p>
+
+                    <h5 class="news--list-item-title">
+                      Півтора року співпраці Укрпошти та Укрзалізниці:
+                      перевезено ≈15 млн відправлень та виплачено ≈170 млн грн…
+                    </h5>
+                  </div>
+                </div>
+
+                <p class="news--list-item-bottom">
+                  В Укрпошти й Укрзалізниці спільною є не лише основа «укр», а й
+                  проєкти, що реалізуються для підтримки українців та України. …
+                </p>
+              </a>
+            </li>
+          </ul>
+
+          <div class="news--icon-more">
+            <a href="#">Всі новини &#8250;</a>
+          </div>
+        </section>
+
+        <!-- Business -->
+        <section class="business">
+          <h2 class="section-title">Для юридичних осіб</h2>
+
+          <ul class="business-list">
+            <li class="business-item">
+              <a href="#">Відправлення по Україні</a>
+            </li>
+
+            <li class="business-item">
+              <a href="#">Експорт</a>
+            </li>
+
+            <li class="business-item">
+              <a href="#">Програмне забезпечення</a>
+            </li>
+
+            <li class="business-item">
+              <a href="#">Укласти договір</a>
+            </li>
+
+            <li class="business-item">
+              <a href="#">Інтеграція API</a>
+            </li>
+
+            <li class="business-item">
+              <a href="#">Особистий кабінет</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Online services -->
+      <section class="online-services">
+        <h2 class="section-title">Онлайн-сервіси Укрпошти</h2>
+
+        <p class="online-services--text">
+          Оформлюй, відправляй та відстежуй “на ходу”
+        </p>
+
+        <div class="online-services--mob-apps">
+          <h6>Мобільний застосунок</h6>
+
+          <ul>
+            <li>
+              <div class="google-play">
+                <img
+                  src="./assets/icons/google-play.svg"
+                  alt="google play icon"
+                />
+                <p>Завантажити</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="app-store">
+                <img src="./assets/icons/app-store.svg" alt="app store icon" />
+                <p>Завантажити</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="online-services--chat">
+          <h6>Чат-бот</h6>
+
+          <div class="chat-bot-icons">
+            <img src="./assets/icons/telegram.png" alt="telegram" />
+            <img src="./assets/icons/viber.png" alt="viber" />
+            <img src="./assets/icons/facebook.png" alt="facebook" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav>
+        <ul class="footer-nav">
+          <li class="footer-nav--common">
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              id="footer-nav--common"
+              class="footer-nav--common-input"
+            />
+
+            <label class="footer-nav--common-label" for="footer-nav--common">
+              <span class="footer-nav--arrow">&#8250;</span>
+              <h5>Загальна інформація</h5>
+            </label>
+
+            <ul>
+              <li class="footer-nav-item">
+                <a href="#">Про Укрпошту</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Наглядова рада</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Керівництво</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Дирекції</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Публічна інформація</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Продаж і оренда нерухомості</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Протидія корупції</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Політика безпеки дорожнього руху</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Конфіденційність</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Для представників ЗМІ</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Новини</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Акції</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Контакт-центр</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav--post-services">
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              id="footer-nav--post-services"
+              class="footer-nav--post-services-input"
+            />
+
+            <label
+              class="footer-nav--post-services-label"
+              for="footer-nav--post-services"
+            >
+              <span class="footer-nav--arrow">&#8250;</span>
+              <h5>Поштові послуги</h5>
+            </label>
+
+            <ul>
+              <li class="footer-nav-item">
+                <a href="#">Укрпошта Експрес</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Укрпошта Стандарт</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Укрпошта Документи</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Доставка по світу</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Доставка в Україну</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Великогабаритні або великовагові відправлення</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Кур’єрська доставка</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Розрахунок вартості</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav--financial-services">
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              id="footer-nav--financial-services"
+              class="footer-nav--financial-services-input"
+            />
+
+            <label
+              class="footer-nav--financial-services-label"
+              for="footer-nav--financial-services"
+            >
+              <span class="footer-nav--arrow">&#8250;</span>
+              <h5>Фінансові послуги</h5>
+            </label>
+
+            <ul>
+              <li class="footer-nav-item">
+                <a href="#">Переказ «З картки додому»</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Переказ «З картки до відділення»</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Переказ «З картки на картку»</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Міжнародні поштові перекази</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Внутрішні поштові перекази</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Платежі</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Страхові послуги</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Валютно-обмінні операції</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-nav--other">
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              id="footer-nav--other"
+              class="footer-nav--other-input"
+            />
+
+            <label class="footer-nav--other-label" for="footer-nav--other">
+              <span class="footer-nav--arrow">&#8250;</span>
+              <h5>Інше</h5>
+            </label>
+
+            <ul>
+              <li class="footer-nav-item">
+                <a href="#">Онлайн-сервіси</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Онлайн-передплата</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Поштовий маркет</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Продукти «Власної марки»</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Періодичні видання</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Для видавців</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Посткросинг</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Секограма</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Знайти індекс</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Знайти адресу</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Знайти відділення</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">Довідка</a>
+              </li>
+              <li class="footer-nav-item">
+                <a href="#">API від Укрпошти</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
