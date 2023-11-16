@@ -1,1 +1,157 @@
+@media screen and (max-width: 1300px) {
+  /* Services | Tracking */
+  .tracking--form {
+    width: 82.5vw;
+  }
 
+  .tracking--links {
+    flex-wrap: wrap;
+    gap: 2.5vw;
+  }
+
+  .tracking--links > li {
+    width: 40vw;
+  }
+
+  /* Services */
+
+  .services {
+    padding-top: 210px;
+    flex-direction: column;
+  }
+
+  .services--banner {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .services--list {
+    width: 82.5vw;
+  }
+
+  .export--banner {
+    width: 82.5vw;
+  }
+
+  .news--list-item a {
+    width: 82.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Desktop menu */
+  .main-menu {
+    display: none;
+  }
+
+  /* Mobile nav */
+  .header--nav-mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Tracking */
+  .tracking--form {
+    min-width: 0;
+  }
+
+  .tracking--links > li {
+    min-width: 0;
+  }
+
+  /* Finances */
+  .finances--list {
+    flex-direction: column;
+  }
+
+  .finances--list-item {
+    width: 82.5vw;
+    aspect-ratio: 7/1;
+  }
+
+  .finances--news {
+    width: 82.5vw;
+  }
+
+  .index--search {
+    flex-direction: column;
+  }
+
+  .index--search > * {
+    width: 82.5vw;
+  }
+
+  .business-item {
+    min-width: 82.5vw;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-nav > li {
+    width: 82.5vw;
+  }
+
+  .footer-nav--common-input ~ ul,
+  .footer-nav--post-services-input ~ ul,
+  .footer-nav--financial-services-input ~ ul,
+  .footer-nav--other-input ~ ul {
+    transform-origin: top;
+    transition: transform 0.3s ease-out;
+    height: 0;
+    transform: scaleY(0);
+  }
+
+  .footer-nav--common-input:checked ~ ul,
+  .footer-nav--post-services-input:checked ~ ul,
+  .footer-nav--financial-services-input:checked ~ ul,
+  .footer-nav--other-input:checked ~ ul {
+    height: 100%;
+    transform: scaleY(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .news--list-item-top {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .tracking {
+    width: 82.5vw;
+  }
+
+  .tracking .tracking--form {
+    width: 100%;
+  }
+
+  .tracking--links > li {
+    /* flex-wrap: wrap; */
+  }
+
+  .tracking .tracking--links > li > a {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tracking-number--button-text {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .tracking--form .tracking-number--button-icon {
+    visibility: visible;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .online-services--mob-apps ul {
+    flex-direction: column;
+  }
+}

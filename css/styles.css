@@ -1,4 +1,4 @@
-@import url("./media-styles.css") screen and (max-width: 1200px);
+@import url('./media-styles.css') screen and (max-width: 1200px);
 
 /*!---Reset styles---*/
 /* #region */
@@ -48,7 +48,7 @@ body {
   position: relative;
   min-height: 100vh;
   min-width: 97vw;
-  font-family: "Rubik Regular", sans-serif;
+  font-family: 'Rubik Regular', sans-serif;
   /* z-index: 1; */
 }
 
@@ -91,6 +91,7 @@ p {
 .header--top {
   min-height: 90px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 /* #endregion */
@@ -122,47 +123,59 @@ p {
 
 /* Mobile menu */
 /* #region */
-.header--nav-mobile {  
-  min-height: 2rem; 
+.header--nav-mobile {
+  position: fixed;
+  top: 1rem;
+  right: 9vw;
+  min-height: 2rem;
   display: none;
   gap: 2.2vw;
 }
 
-.burger-icon {
-  z-index: 11;
-}
-
 .nav-mobile {
-  position: absolute;
-  top: 90px;
+  position: fixed;
+  top: 0;
   right: 100vw;
+  padding-top: 5vh;
   padding-left: 9vw;
-  /* display: none; */
   height: 100vh;
   width: 85vw;
   flex-direction: column;
   justify-content: space-between;
   gap: 2.2vw;
-  min-height: 2rem;  
+  min-height: 2rem;
   border-bottom: 1px solid var(--link-color);
   background: var(--main-bg-color);
-  transition: all 0.9s ease;
+  transition: all 0.5s ease;
   transform: scaleX(0);
+  font-size: 1.5rem;
 }
 
 .nav-mobile label {
-  padding: 0.2rem 0;
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+}
+
+.nav-mobile--label {
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
   color: var(--secondary-text-color);
+  background: var(--main-bg-color);
 }
 
 .burger-icon {
   height: 1.5rem;
   margin-right: 1rem;
   position: relative;
+  z-index: 11;
 }
 
 .burger-icon--top {
@@ -195,10 +208,11 @@ p {
   transition: all 1s ease-out;
 }
 
-.nav-mobile--input:checked ~ ul { 
+.nav-mobile--input:checked ~ ul {
   right: 15vw;
   transition: all 0.9s ease;
   transform: scaleX(1);
+  overflow: auto;
 }
 
 .nav-mobile > li > ul {
@@ -218,22 +232,6 @@ p {
   visibility: hidden;
   height: 0;
   width: 0;
-}
-
-.nav-mobile--label {
-  padding: 1rem 0;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-.nav-mobile--label h5 {
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.nav-mobile--arrow {
-  display: block;
-  transform: rotate(-90deg);
 }
 
 .nav-mobile--common-input ~ ul,
@@ -609,6 +607,11 @@ p {
   background: var(--main-bg-color);
 }
 
+/* .index--search-input:focus-visible, */
+.index--search-input input:focus-visible {
+    outline: 0;
+}
+
 .index--search-input input {
   width: 278px;
   height: 19px;
@@ -616,6 +619,7 @@ p {
   font-family: Rubik;
   font-size: 1rem;
   letter-spacing: 0.5px;
+  border-width: 0;
 }
 
 .index--search-button {
@@ -654,6 +658,7 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+  padding-top: 32px;
 }
 
 .news--list-item {
@@ -663,7 +668,7 @@ p {
 
 .news--list-item a {
   width: 40vw;
-  height: 250px;
+  min-height: 250px;
   padding: 30px;
   display: block;
 }
@@ -672,6 +677,11 @@ p {
   display: flex;
   gap: 30px;
   margin-bottom: 24px;
+}
+
+.news--list-item-top img {
+  width: 100px;
+  height: 100px;
 }
 
 .news--list-item-date {
@@ -840,7 +850,7 @@ p {
 
 .footer-nav {
   padding-bottom: 51px;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   gap: 2.2vw;
   border-bottom: 1px solid var(--link-color);
@@ -916,149 +926,3 @@ p {
 }
 
 /* #endregion */
-
-@media screen and (max-width: 1300px) {
-  /* Services | Tracking */
-  .tracking--form {
-    width: 82.5vw;
-  }
-
-  .tracking--links {
-    flex-wrap: wrap;
-    gap: 2.5vw;
-  }
-
-  .tracking--links > li {
-    width: 40vw;
-  }
-
-  /* Services */
-
-  .services {
-    padding-top: 210px;
-    flex-direction: column;
-  }
-
-  .services--banner {
-    width: 100%;
-    min-height: 0;
-  }
-
-  .services--list {
-    width: 82.5vw;
-  }
-
-  .export--banner {
-    width: 82.5vw;
-  }
-
-  .news--list-item a {
-    width: 82.5vw;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  /* Desktop menu */
-  .main-menu {
-    display: none;
-  }
-
-  /* Mobile nav */
-  .header--nav-mobile {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  /* Tracking */
-  .tracking--form {
-    min-width: 0;
-  }
-
-  .tracking--links > li {
-    min-width: 0;
-  }
-
-  /* Finances */
-  .finances--list {
-    flex-direction: column;
-  }
-
-  .finances--list-item {
-    width: 82.5vw;
-    aspect-ratio: 7/1;
-  }
-
-  .finances--news {
-    width: 82.5vw;
-  }
-
-  .index--search {
-    flex-direction: column;
-  }
-
-  .index--search > * {
-    width: 82.5vw;
-  }
-
-  .business-item {
-    min-width: 82.5vw;
-  }
-
-  .footer-nav {
-    flex-direction: column;
-  }
-
-  .footer-nav > li {
-    width: 82.5vw;
-  }
-
-  .footer-nav--common-input ~ ul,
-  .footer-nav--post-services-input ~ ul,
-  .footer-nav--financial-services-input ~ ul,
-  .footer-nav--other-input ~ ul {
-    transform-origin: top;
-    transition: transform 0.3s ease-out;
-    height: 0;
-    transform: scaleY(0);
-  }
-
-  .footer-nav--common-input:checked ~ ul,
-  .footer-nav--post-services-input:checked ~ ul,
-  .footer-nav--financial-services-input:checked ~ ul,
-  .footer-nav--other-input:checked ~ ul {
-    height: 100%;
-    transform: scaleY(1);
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .tracking {
-    width: 82.5vw;
-  }
-
-  .tracking .tracking--form {
-    width: 100%;
-  }
-
-  .tracking--links > li {
-    /* flex-wrap: wrap; */
-  }
-
-  .tracking .tracking--links > li > a {
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .tracking-number--button-text {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-
-  .tracking--form .tracking-number--button-icon {
-    visibility: visible;
-    width: 16px;
-    height: 16px;
-  }
-}
