@@ -49,7 +49,7 @@ html {
 body {
   position: relative;
   min-height: 100vh;
-  min-width: 97vw;
+  /* min-width: 97vw; */
   font-family: 'Rubik Regular', sans-serif;
   /* z-index: 1; */
 }
@@ -291,12 +291,6 @@ p {
   width: 100vw;
 }
 
-.container-relative {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-}
-
 .up-button {
   position: fixed;
   bottom: 5vh;
@@ -307,7 +301,6 @@ p {
   border-radius: 10px;
   font-size: 2rem;
   color: var(--section-main-bg-color);
-  z-index: 20;
   transform: rotate(-90deg);
   transition: background-color 0.5s ease;
 }
@@ -514,6 +507,42 @@ background-color: var(--section-main-bg-color);
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 20px;
+}
+
+.car-svg {
+  background: url(../assets/svg/car.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.documents-svg {
+  background: url(../assets/svg/docs.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.box-svg {
+  background: url(../assets/svg/box.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.medicine-svg {
+  background: url(../assets/svg/medicine.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.plane-svg {
+  background: url(../assets/svg/plane.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.map-svg {
+  background: url(../assets/svg/map.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* #endregion */

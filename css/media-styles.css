@@ -1,6 +1,14 @@
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1440px) {
   :root {
-    font-size: 1.1vw;
+    font-size: 1.25vw;
+  }
+
+  .services--banner {
+    width: 35vw;
+  }
+
+  .services--list {
+    width: 55vw;
   }
 }
 
