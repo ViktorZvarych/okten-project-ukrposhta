@@ -44,6 +44,10 @@ a:focus {
   --link-color: #99a2aa;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -264,6 +268,7 @@ p {
 /* #endregion */
 
 /*!---MAIN---*/
+/* Main common */
 /* #region */
 .main {
   margin: -0.5rem auto 0;
@@ -275,6 +280,43 @@ p {
   visibility: hidden;
   width: 0;
   height: 0;
+}
+/* #endregion */
+
+/* Up-button */
+/* #region  */
+.container-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container-relative {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.up-button {
+  position: fixed;
+  bottom: 5vh;
+  right: 8vw;
+  cursor: pointer;
+  padding: 3px 10px 8px 12px;
+  background-color: var(--section-secondary-bg-color);
+  border-radius: 10px;
+  font-size: 2rem;
+  color: var(--section-main-bg-color);
+  z-index: 20;
+  transform: rotate(-90deg);
+  transition: background-color 0.5s ease;
+}
+
+.up-button:hover {
+background-color: var(--section-main-bg-color);
+  color: var(--section-secondary-bg-color);
 }
 /* #endregion */
 
@@ -609,7 +651,7 @@ p {
 
 /* .index--search-input:focus-visible, */
 .index--search-input input:focus-visible {
-    outline: 0;
+  outline: 0;
 }
 
 .index--search-input input {
@@ -837,6 +879,7 @@ p {
   gap: 20px;
 }
 /* #endregion */
+
 
 /*!---FOOTER---*/
 /* #region */
