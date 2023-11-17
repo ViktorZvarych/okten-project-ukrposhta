@@ -100,8 +100,6 @@ p {
 
 /* Main menu */
 /* #region */
-.header--bottom {
-}
 
 .main-menu {
   display: flex;
@@ -438,6 +436,7 @@ background-color: var(--section-main-bg-color);
   color: var(--secondary-text-color);
 }
 
+/*? set styles on hover
 .calculate {
 }
 
@@ -448,7 +447,8 @@ background-color: var(--section-main-bg-color);
 }
 
 .book {
-}
+} */
+
 /* #endregion */
 
 /*---Services---*/
@@ -477,9 +477,6 @@ background-color: var(--section-main-bg-color);
 .services .section-title {
   color: var(--secondary-text-color);
   padding-bottom: 36px;
-}
-
-.services--banner p {
 }
 
 .services--list {

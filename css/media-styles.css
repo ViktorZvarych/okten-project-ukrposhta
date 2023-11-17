@@ -141,10 +141,6 @@
     width: 100%;
   }
 
-  .tracking--links > li {
-    /* flex-wrap: wrap; */
-  }
-
   .tracking .tracking--links > li > a {
     flex-direction: column;
     justify-content: center;
