@@ -287,6 +287,7 @@ p {
   left: 0;
   height: 100vh;
   width: 100vw;
+  z-index: -1;
 }
 
 .up-button {
@@ -304,7 +305,7 @@ p {
 }
 
 .up-button:hover {
-background-color: var(--section-main-bg-color);
+  background-color: var(--section-main-bg-color);
   color: var(--section-secondary-bg-color);
 }
 /* #endregion */
@@ -421,7 +422,10 @@ background-color: var(--section-main-bg-color);
 }
 
 .tracking--links > li > a {
+  width: 100%;
+  height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
@@ -490,13 +494,21 @@ background-color: var(--section-main-bg-color);
 .services--list-item {
   width: 45%;
   height: 180px;
-  padding-top: 32px;
-  padding-left: 30px;
+  border-radius: 10px;
+  transition: all 0.5s linear;
+}
+
+.services--list-item:hover {
+  box-shadow: 0px 3px 35px 0px rgba(95, 98, 102, 0.17);
 }
 
 .services--list-item > a {
   display: block;
-  width: 70%;
+  width: 100%;
+  height: 100%;
+  padding-top: 32px;
+  padding-right: 20%;
+  padding-left: 30px;
 }
 
 .services--list-item p {
@@ -613,16 +625,42 @@ background-color: var(--section-main-bg-color);
   margin-top: 32px;
   margin-bottom: 80px;
   display: flex;
+  gap: 30px;
 }
 
 .finances--list-item {
   width: 270px;
   aspect-ratio: 1/1;
-  padding: 32px 90px 0 30px;
+}
+
+.cards {
+  background: url(../assets/svg/cards.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.building {
+  background: url(../assets/svg/building.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.medicine-2 {
+  background: url(../assets/svg/medicine2.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .finances--list a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 32px 90px 0 30px;
   color: var(--secondary-text-color);
+}
+
+.finances--list a:hover {
+  box-shadow: 0px 3px 35px 0px rgba(95, 98, 102, 0.17);
 }
 
 .finances-title {
@@ -700,6 +738,10 @@ background-color: var(--section-main-bg-color);
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--secondary-text-color);
+}
+
+.index--search-button:hover {
+  cursor: pointer;
 }
 
 /* #endregion */
@@ -802,6 +844,7 @@ background-color: var(--section-main-bg-color);
 .business-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 30px;
   padding-top: 62px;
 }
@@ -811,23 +854,19 @@ background-color: var(--section-main-bg-color);
   min-width: 370px;
   width: 25.64vw;
   height: 92px;
-  padding: 30px 40px;
   align-items: center;
   border-radius: 10px;
   background: var(--main-text-color);
 }
 
 .business-item a {
-  font-family: Rubik;
+  height: 100%;
+  width: 100%;
+  padding: 30px 40px;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 32px;
   color: var(--link-color);
-}
-
-.business-item a {
-  transition: all 0.5s linear;
-  color: var(--secondary-text-color);
 }
 
 .business-item a:hover {
@@ -903,7 +942,6 @@ background-color: var(--section-main-bg-color);
   gap: 20px;
 }
 /* #endregion */
-
 
 /*!---FOOTER---*/
 /* #region */

@@ -12,6 +12,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .business-item {
+    width: 38vw;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   /* Services | Tracking */
   .tracking--form {
@@ -52,6 +58,12 @@
   }
 }
 
+@media screen and (max-width: 940px) {
+  .business-item {
+    width: 82.5vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
   /* Desktop menu */
   .main-menu {
@@ -78,11 +90,6 @@
     flex-direction: column;
   }
 
-  .finances--list-item {
-    width: 82.5vw;
-    aspect-ratio: 7/1;
-  }
-
   .finances--news {
     width: 82.5vw;
   }
@@ -93,10 +100,6 @@
 
   .index--search > * {
     width: 82.5vw;
-  }
-
-  .business-item {
-    min-width: 82.5vw;
   }
 
   .footer-nav {
@@ -164,7 +167,7 @@
   }
 
   .services--list-item {
-    width: 82.5vw
+    width: 82.5vw;
   }
 }
 
