@@ -49,9 +49,7 @@ html {
 body {
   position: relative;
   min-height: 100vh;
-  /* min-width: 97vw; */
   font-family: 'Rubik Regular', sans-serif;
-  /* z-index: 1; */
 }
 
 .section-title {
@@ -625,6 +623,7 @@ p {
   margin-top: 32px;
   margin-bottom: 80px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
