@@ -510,13 +510,13 @@ background-color: var(--section-main-bg-color);
 }
 
 .car-svg {
-  background: url(./assets/svg/car.svg);
+  background: url(assets/svg/car.svg);
   background-size: cover;
   background-position: center;
 }
 
 .documents-svg {
-  background: url(./assets/svg/docs.svg);
+  background: url(/assets/svg/docs.svg);
   background-size: cover;
   background-position: center;
 }
@@ -528,13 +528,13 @@ background-color: var(--section-main-bg-color);
 }
 
 .medicine-svg {
-  background: url(./assets/svg/medicine.svg);
+  background: url(../assets/svg/medicine.svg);
   background-size: cover;
   background-position: center;
 }
 
 .plane-svg {
-  background: url(./assets/svg/plane.svg);
+  background: url(../../assets/svg/plane.svg);
   background-size: cover;
   background-position: center;
 }
