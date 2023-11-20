@@ -90,6 +90,11 @@
     flex-direction: column;
   }
 
+  .finances--list-item {
+    width: 82.5vw;
+    height: 250px;
+  }
+
   .finances--news {
     width: 82.5vw;
   }

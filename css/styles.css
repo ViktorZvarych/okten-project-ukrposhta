@@ -624,8 +624,10 @@ p {
   margin-top: 32px;
   margin-bottom: 80px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  flex-grow: 1;
 }
 
 .finances--list-item {
