@@ -313,7 +313,7 @@ p {
 .hero-banner--title {
   padding-top: 6vh;
   padding-bottom: 4vh;
-  font-size: 44px;
+  font-size: 2.75rem;
   font-weight: 700;
   color: var(--main-text-color);
 }
@@ -356,7 +356,7 @@ p {
 }
 
 .tracking-number--input {
-  width: 232px;
+  min-width: 232px;
   border-width: 0;
   font-size: 1rem;
   color: var(--secondary-text-color);
